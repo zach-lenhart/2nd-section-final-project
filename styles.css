@@ -904,6 +904,7 @@ footer {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
+  padding-left: 64px;
 }
 .footer__column {
   width: calc(100% / 5);
@@ -924,6 +925,9 @@ footer {
   display: flex;
   align-items: center;
   
+}
+.footer__column--link:nth-child(5){
+  padding-right: 0;
 }
 .footer__links {
   display: flex;
