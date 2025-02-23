@@ -29,10 +29,7 @@ section {
 .purple {
   color: #6415ff;
 }
-body {
- 
-  
-}
+
 h1 {
   font-size: 48px;
   color: #1a202c;
@@ -299,20 +296,19 @@ height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border-radius: 555px;
+  
 }
 .decription__email {
   width: 100%;
   border-radius: 500px;
-  border: 1px solid rgb(229, 231, 235);
+  border: 2px solid rgb(229, 231, 235);
   padding: 20px 192px 20px 32px;
   color: rgb(36, 62, 99);
   font-size: 16px;
   font-weight: 500;
   position: absolute;
-  display: flex;
-  justify-content: flex-end;
- 
+  top: 0;
+  bottom: 0;
   z-index: 1;
   transition: border-color 300ms;
 }
@@ -330,17 +326,17 @@ height: 100%;
   border-color: rgba(160, 174, 192);
 }
 .decription__email--btn {
-  background-color: #6415ff;
-  border: none;
-  color: white;
-  margin: 8px;
-  border-radius: 555px;
   z-index: 2;
+  margin: 8px;
+  height: calc(100% - 16px);
+  border-radius: 500px;
+  width: 160px;
+  border: none;
+  background-color: #6415ff;
+  color: #fff;
   font-weight: 700;
   font-size: 16px;
-  transition: all 300ms ease;
-  height: calc(100% - 16px);
-  width: 160px;
+  transition: all 300ms;
 }
 .decription__email--btn:hover {
   background-color: rgba(60, 13, 153);
@@ -1351,7 +1347,7 @@ margin-left: 90px;
 }
 .footer__column{
   width: calc(100%/3);
-  align-ittems: center;
+  align-items: center;
 
 }
 .footer__column:nth-child(4){
@@ -1394,11 +1390,14 @@ margin-left: 90px;
   .footer__columns{
     flex-direction: column;
     margin: 0 auto;
+   
   }
 
   .footer__column{
     margin: 0 auto ;
     padding-top: 24px;
+    align-items: center;
+
   }
   .footer__column:nth-child(4){
     margin-right: auto;
@@ -1445,23 +1444,31 @@ margin-left: 90px;
 .description__email--wrapper{
   flex-direction: column;
   height: auto;
-  position: relative;
+  
 }
 
-.description__email{
-height: auto;
+.decription__email{
   position: static;
   padding: 16px 0;
+  padding-left: 32px;
+  line-height: 1.5;
 }
 .decription__email--btn{
-  position: absolute;
   width: 100%;
   padding: 16px 0;
-  margin: 24px 0;
+  margin: 16px 0;
   margin-bottom: 0px;
   line-height: 1.5;
-  z-index: 2;
- border-top: 24px ;
 }
-
+.start__title{
+  font-size: 24px;
+}
+.start__btn{
+ 
+  font-size: 14px;
+}
+.plans {
+  justify-content: center;
+  align-items: center;
+}
 }
